@@ -1,0 +1,217 @@
+.header {
+    width: 1350px;
+    height: auto;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: center; /* Centers the free shipping message */
+    align-items: center; /* Vertically centers everything */
+    background: #165315;
+    padding: 5px 20px;
+    font-size: 14px;
+    position: relative; /* Allows for positioning of contact info */
+  }
+  
+  .top-bar p {
+    margin: 0; /* No extra margin on the free shipping message */
+    color: #fff;
+  }
+  
+  .contact-info {
+    position: absolute; /* Takes the contact info out of the normal flow */
+    right: 20px; /* Positions the contact info on the right end */
+    color: #fff;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 50px; /* Adjust size according to your logo */
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c5f2d;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .nav-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .nav-item:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nav-item .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-item .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .profile-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-cart .icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .search {
+      color: #828282;
+    width: 370px;
+    height: 26px;
+    position: relative;
+    left: 498px;
+     gap: 0px; /* You can remove this if there's no flex container */
+    border-top: 1px solid; /* Defines a 1px top border */
+     border-color: black; /* Adds the border color */
+     opacity: 1; /* Make sure the element is visible */
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .search-icon, .plant-icon {
+    padding: 0 10px;
+    color: #555;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  .search-bar i {
+    font-size: 20px; /* Adjust icon size */
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.plant-btn {
+  width: 114px;
+  height: 37px;
+  top: 215px;
+  left: 194px;
+  gap: 0px;
+  border: 1px solid #0000004c;
+  opacity: 0px;
+  background: #165315; /* Semi-transparent black */
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  color: #fff;
+  margin-left: 10px;
+ 
+  
+}
+.plot-btn {
+  width: 114px;
+  height: 37px;
+  top: 215px;
+  left: 194px;
+  gap: 0px;
+  border: 1px solid #0000004c;
+  opacity: 0px;
+  background: transparent; /* Semi-transparent black */
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  color: #0000004D;
+  margin-left: 10px;
+}
+
+.row-btn {
+  display: flex;
+  
+}
+.plant {
+  margin-bottom: 10px;
+}
+
+.lpara{
+  margin-left: 10px;
+}
+.space{
+  margin-left: 25px;
+}
+
+.sub-img {
+  height: 120px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.sub-para {
+  margin-left: 28px;
+}
+
+.sub-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}

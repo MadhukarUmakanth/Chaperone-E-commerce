@@ -1,0 +1,232 @@
+/* General Styling */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Added spacing between filter and product list */
+    flex-wrap: wrap; /* Allows wrapping in smaller screens */
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    width: 100%;
+}
+
+.filter-sidebar {
+    width: 50%;
+    height: 54%;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    border-radius: 8px; /* Added rounded corners */
+    
+}
+
+.filter-item {
+    margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set fixed 3 columns layout */
+    gap: 20px;
+    width: 75%; /* Adjusted width to give more space to products */
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white; /* Set background for clean appearance */
+}
+
+.product-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.view-product-btn {
+    padding: 10px 18px; /* Increased button size for better touch area */
+    background-color: #247822;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+    
+}
+
+.view-product-btn:hover {
+    background-color: #5c9239;
+}
+
+.product-details {
+    margin-top: 15px;
+}
+
+.product-details h3 {
+    margin-bottom: 10px;
+    font-size: 20px; /* Slightly increased font size */
+    color: #333;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.discount-price {
+    font-size: 18px; /* Increased for better emphasis */
+    color: #247822;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #999;
+    font-size: 15px;
+}
+
+/* Action Buttons */
+/* Action Buttons */
+.product-actions {
+    display: flex;
+    justify-content: space-between; /* Keep the buttons spaced apart */
+    margin-top: 10px;
+}
+
+.product-actions button {
+    padding: 10px 15px; /* Increased button size for better usability */
+    border: none;
+    background-color: #247822;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly increased font size */
+    margin-right: 10px; /* Added margin-right to create a gap */
+}
+
+.product-actions button:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+}
+
+.product-actions button:hover {
+    background-color: #5c9239;
+}
+
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Added padding to separate from other content */
+   
+}
+
+.page-item {
+    background-color: #247822; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Make buttons round */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    margin: 0 5px; /* Space between buttons */
+    cursor: pointer; /* Pointer on hover */
+    display: flex; /* Center text vertically */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-size: 16px; /* Font size */
+}
+
+.page-item.active {
+    background-color: #5c9239;
+}
+
+.page-item:hover {
+    background-color: #5c9239;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack filter and products vertically */
+    }
+
+    .filter-sidebar {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Add space after filter section */
+    }
+
+    .product-list {
+        width: 100%; /* Full width on mobile */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Allow responsive grid on smaller screens */
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .view-product-btn {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 12px; /* Adjust button size */
+    }
+
+    .product-actions button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .page-item {
+        font-size: 14px; /* Reduce pagination font size for mobile */
+        padding: 8px 10px;
+    }
+}
+
+.filter{
+    display: flex;
+    width: 263px;
+  height: 636px;
+  top: 18px;
+  left: 21px;
+  gap: 0px;
+  border: 1px solid transparent; /* Assuming you want a border on top */
+  opacity: 1px;
+  
+}
+.par {
+    font-size: 16px;
+    margin-top: 30px;
+    
+    
+
+}
+.part{
+    margin-top: 23px;
+}
+.subhead{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,250 @@
+/* General Footer Styles */
+.footer {
+  background-color: #edf7e7; /* Light green background */
+  padding: 40px;             /* Padding around the content */
+  font-family: Arial, sans-serif; /* Font family */
+  color: #4f5d4e;  
+  width: 100%; /* Full width */
+  height: auto; /* Automatic height based on content */
+  gap: 0px; /* No gap between sections (adjust if needed) */
+  opacity: 1; /* Ensure full visibility */
+}
+
+/* Flexbox container to align sections side by side */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute sections evenly */
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: nowrap; /* Prevent wrapping, keeps all sections in one row */
+  padding-bottom: 30px;
+  gap: 10px; /* Add some gap between sections */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Each section should take equal space */
+.footer-section {
+  flex-basis: 20%; /* Each section takes 20% of the width */
+  margin-bottom: 20px; /* Space below each section */
+  min-width: 200px; /* Minimum width to maintain layout */
+  
+}
+
+/* Section Titles */
+.footer-section h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 15px; /* Space below the title */
+  margin-left: 5px;
+}
+
+button {
+  width: 130px;                        /* Width of the button */
+  height: 35px;                        /* Height of the button */
+  top: 50px;                           /* Position from the top */
+  gap: 0px;                            /* Gap between items if in a flex container */
+  border-radius: 30px;    /* Rounded corners */
+  opacity: 1;                          /* Change to 1 to make it visible */
+  background: #247822;                /* Background color */
+  border-width: 0px;
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 16px;                    /* Font size */
+  font-weight: 600;                   /* Font weight */
+  line-height: 24px;                  /* Line height */
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+
+/* Section Paragraphs and Lists */
+
+.footer-section ul {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #838383;
+  width: 183px;
+  height: 45px;
+  top: 2648px;
+  left: 108px;
+  gap: 0px; /* Only applicable in flex or grid context */
+  opacity: 1; 
+  
+
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Newsletter Paragraph */
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+/* Input container for subscribe form */
+.input-container {
+  padding-top: 5px;
+}
+
+/* Flexbox layout for the subscribe form */
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Subscribe input field */
+.subscribe-form input {
+  width: 70%;
+  height: 35px;
+  border: 1px solid #0000004D;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #000;
+}
+
+/* Subscribe button */
+.subscribe-form button {
+  width: 30%;
+  height: 35px;
+  border-radius: 30px;
+  background: #247822;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-space {
+  margin-top: 10px;
+  
+}
+
+.subscribe-form button:hover {
+  background-color: #5c9239;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+ gap: 20px;
+ color: #000;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #4f5d4e;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #76b947;
+}
+
+/* Footer bottom text */
+.footer-bottom p {
+  font-size: 14px;
+  color: #6b7761;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .footer-section {
+    flex-basis: 100%; /* Full width for small screens */
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+.container {
+  display: flex;
+  margin-left: 100px;
+}
+
+h4 {
+  width: 258px;
+  height: 60px;
+  top: 2584px;
+  left: 108px;
+  gap: 0px; /* Only applicable in flex or grid context */
+  opacity: 1; /* Element will be invisible */
+  font-family: 'Poppins', sans-serif; /* Make sure to include the font import */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  
+}
+.para {
+  width: 258px;
+  height: 60px;
+  top: 2584px;
+  left: 108px;
+  gap: 0px; /* Only applicable in flex or grid context */
+  opacity: 1; /* Element will be invisible */
+  
+  /* Font styles */
+  font-family: 'Poppins', sans-serif; /* Make sure to include the font import */
+  font-size: 14px; /* Changed to the last defined size */
+  font-weight: 400; /* Changed to the last defined weight */
+  line-height: 21px; /* Changed to the last defined line height */
+  text-align: left;
+  color: #838383; /* Added text color */
+}
+
+.touch {
+  gap: 20px;
+  width: auto;
+}
+

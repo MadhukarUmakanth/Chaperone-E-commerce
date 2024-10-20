@@ -1,0 +1,101 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensures it sits above other content */
+    
+  }
+
+  .place{
+    margin-top: 95px;
+  }
+
+  .cart {
+    margin-top: 15px;
+    font-family: Poppins;      /* Sets the font of the text to 'Poppins' */
+    font-size: 20px;           /* Sets the font size to 17 pixels */
+    font-weight: 400;          /* Sets the weight of the font, where 400 is equivalent to 'normal' */
+    line-height: 25.5px;       /* Sets the height of each line of text to 25.5 pixels */
+    text-align: center; 
+    color: #0F4811;
+    border-bottom: 1px solid #B0B0B0;
+    margin: 10px;
+
+  }
+  
+  .thankyou-modal {
+    background-color: #fff; /* White background for the modal */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center-align text */
+    border-radius: 8px; /* Rounded corners */
+    width: 453px; /* Full width with some margin */
+    height: 661px;
+    max-width: 400px; /* Maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .thankyou-modal h2 {
+    color: #4CAF50; /* Green color for headings */
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 10px; /* Space below the heading */
+    font-weight: 600;
+    padding-top: 25px;
+
+  }
+  
+  .plant-emoji {
+    margin: 15px 0; /* Space above and below the emoji */
+  }
+  
+  .plant-emoji img {
+    width: 97px;        /* Sets the width of the element to 97 pixels */
+    height: 98px;       /* Sets the height of the element to 98 pixels */
+    top: 271px;         /* Positions the element 271 pixels from the top, likely in a relative or absolute positioning context */
+    left: 178px;        /* Positions the element 178 pixels from the left */
+    gap: 0px;           /* Defines the gap between grid or flex items (set to 0 pixels here) */
+    opacity: 1px;/* Fixed height for the emoji */
+    padding-top: 25px;
+  }
+  
+  .thankyou-modal p {
+    font-size: 16px; /* Regular text size */
+    font-weight: 400;
+    color: #165315;
+    padding-top: 25px;
+  }
+  
+  .continue-button {
+    width: 307px;
+    height: 45px;
+    background-color: #165315; /* Green background for button */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .continue-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .close-button {
+    position: absolute; /* Positioned at the top-right corner */
+    top: 10px; /* 10px from the top */
+    right: 10px; /* 10px from the right */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for close button */
+    color: #555; /* Gray color for close button */
+  }
+  
