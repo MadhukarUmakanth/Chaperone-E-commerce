@@ -25,11 +25,5 @@ In this project, I followed an agile development process, focusing on implementi
 2. **State Management**: Managing the state for the cart and product details to provide real-time updates to the user interface.
 3. **Responsive Design**: Ensuring the application is mobile-friendly and adjusts well to different screen sizes.
 
-## Running the Project
 
-To run this project locally, follow these steps:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/chaperone.git
-   cd chaperone
